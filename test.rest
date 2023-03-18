@@ -1,0 +1,57 @@
+GET http://localhost:3000/users/
+
+###
+
+DELETE  http://localhost:3000/blog/641458fc04d8931f1e01eaaf
+
+###
+
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+    "username": "Melvin",
+    "password": "test",
+}
+
+###
+
+POST http://localhost:3000/users/blog
+Content-Type: application/json
+
+{
+    "title": "Webdev",
+    "Body": "Hello World!",
+    "author": ["64131db099b5b36b68b5cc4a"]
+}
+
+###
+
+PUT http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "_id": "641324e12cbe548643019098",
+    "username": "Amanda"
+}
+
+###
+
+POST http://localhost:3000/users
+content-type: application/json
+
+{
+    "name": "Zigge",
+    "password": "hund"
+}
+
+###
+
+POST http://localhost:3000/users/blog
+content-type: application/json
+
+{
+    "blogPost": "Hello Sweden!"
+}
+
+###
